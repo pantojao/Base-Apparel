@@ -1,0 +1,166 @@
+*::after, *, *::before{
+  box-sizing: border-box;
+}
+p,h1,h2{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+body{
+  width: 100vw;
+}
+.logo-container{
+  height: 90px;
+  
+}
+
+.logo{
+  object-fit: contain;
+  margin: 1em 0.5em;
+}
+
+.hero{
+  width: 100vw !important;
+  margin: 0 auto;
+}
+.content{
+  width: 90%;
+  margin: 0em auto;
+}
+
+.main-header{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.orange-text{
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+  letter-spacing: 6px;
+}
+.black-text{
+  color:  hsl(0, 6%, 24%);
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.pitch{
+  text-align: center;
+  width: 330px;
+  margin: 0 auto;
+  color: hsl(0, 93%, 68%);
+  font-weight: 300;
+}
+
+.email{
+  display: flex;
+  justify-content: center;
+  margin: 2em auto;
+  position: relative;
+}
+
+
+.email-input{
+  position: relative;
+  border-radius: 2em;
+  width: 325px;
+  padding: 1.2em 2em;
+  border: 1px hsla(0, 6%, 24%, 0.568) solid;
+} 
+.email-input:focus{
+  outline:none;
+}
+
+.btn{
+  position: absolute;
+  right:10px;
+  width: 65px;
+  height: 50px;
+  border-radius: 25px;
+  z-index: 5;
+  background-color: rgb(207, 150, 183);
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+} 
+
+
+.arrow{
+  position: absolute;
+  left: 28px;
+  top: 13px;
+  width: 12px;
+  z-index: 54;
+  object-fit:contain;
+}
+
+
+@media screen  and (min-width: 1000px){
+  body{
+    overflow: hidden;
+  }
+  .logo-container{
+    height: 90px;
+    margin-left: 4.5em;    
+  }
+  .hero{
+    content: url('./images/hero-desktop.jpg');
+    position: absolute;
+    max-height: 100%;
+    top: 0;
+    left: 32%;
+    object-fit: contain;
+   
+  }
+  .main-header{
+    text-align: left;
+    margin-bottom: 0em; 
+  }
+  .orange-text{
+    letter-spacing: 15px;
+  }
+  .black-text{
+    letter-spacing: 12px;
+  }
+  .pitch{
+    text-align: left;
+    margin: 0em; 
+    width: 70%;
+  }
+  .main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    width: 50%;
+  }
+
+  .content{
+    height: 70vh;
+    margin-right: -1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+  }
+  .email{
+    margin-left: 0em
+  }
+  .email-input{
+    width: 400px;
+  } 
+
+  .btn{
+    right:0px;
+    width: 70px;
+    height: 50px;
+    border-radius: 30px;
+  } 
+  
+.arrow{
+  left: 30px;
+  top: 17px;
+  width: 8px
+}
+  
+}
+/* Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
